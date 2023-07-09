@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        body{
+            background-color: cornflowerblue;
+        }
+      
+        
+        h1{
+            background-color: cornflowerblue;
+            text-align: center;
+            color: white;
+        }
+        
+        
+        nav{
+            text-align: center;
+            background-color: cornflowerblue;
+            color: white;
+            border: solid white 3px;
+        }
+        div{
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            background-color: white;
+            color: cornflowerblue;
+        }
+        footer{
+            text-align: center;
+            color: white;
+        }
+    </style>
+    <script>
+        function showRequirements(id) {
+            var requirements = document.getElementById(id);
+            if (requirements.style.display === "none") {
+                requirements.style.display = "block";
+            } else {
+                requirements.style.display = "none";
+            }
+        }
+    </script>
+    <title>Página de Carreiras</title>
+</head>
+<body>
+    <header>
+        <h1>Vagas de Emprego &#x1F4BC;</h1>
+    </header>
+    <article>
+        <section>
+            <div onclick="showRequirements('requirements1')">
+                <h3>Design UI/UX Jr (Bitzen Tecnologia)</h3>
+                <p><strong>Atividades</strong></p>
+                <ul>
+                    <li>Criação de wireframes digitais.</li>
+                    <li>Criação de protótipos digitais com Adobe XD.</li>
+                    <li>Apoiar equipe técnica para validação do protótipo implementado.</li>
+                    <li>Apresentação dos protótipos ao cliente ou equipe interna.</li>
+                    <li>Criação de design de páginas web.</li>
+                </ul>
+                <div id="requirements1" style="display: none;">
+                    <p>
+                        Requisitos:
+                        <br>
+                        • Noção de design.
+                        <br>
+                        • Noções de navegação web e apps.
+                        <br>
+                        • Conhecimento em pacote Adobe ou Figma.
+                        <br>
+                        • Formação em Design, Publicidade, Marketing ou afins.
+                        <br>
+                        • Portfólio (estudantil ou profissional).
+                    </p>
+                </div>
+                <p>
+                    💲Faixa salarial: a combinar;
+                    <br>
+                    🤝 Contratação PJ.
+                    <br>
+                    📍 Vaga 100% remota.
+                    <br>
+                    💻 Candidate-se pelo e-mail rh@bitzen.com.br, enviando seu cv e portfólio.
+                </p>
+            </div>
+        </section>
+        <section>
+            <div onclick="showRequirements('requirements2')">
+                <h3>Estagiário(a) de Geração de Leads (NuvemShop)</h3>
+                <p><strong>Atividades</strong></p>
+                <ul>
+                    <li>Prospectar ativamente e-commerces com o perfil Nuvemenvio, para abastecimento do nosso funil de vendas;</li>
+                    <li>Preencher o CRM (SalesForce) com informações para que a pessoa que realiza a pré-venda (SDR) chegue até o cliente (lead) de forma mais rápida e efetiva;</li>
+                    <li>Participar do acompanhamento de métricas de desempenho e resultado.</li>
+                </ul>
+                <div id="requirements2" style="display: none;">
+                    <p>
+                        Requisitos:
+                        Formação em andamento em um dos seguintes cursos: Administração/Marketing/Gestão Comercial/Gestão de Marketing;
+                        Estar entre o primeiro ao terceiro semestre da faculdade;
+                        Disponibilidade para trabalhar 30 horas semanais;
+                        Conhecimento Intermediário em Pacote Office;
+                        Boa comunicação e relacionamento interpessoal;
+                        Atenção a detalhes.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </article>
+    <footer>
+        <p>&copy; Renata e Victor</p>
+    </footer>
+</body>
+</html>

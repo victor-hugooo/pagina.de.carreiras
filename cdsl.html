@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página de Carreiras</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      margin: 0;
+    }
+    
+    main {
+      padding: 20px;
+    }
+    
+    .job {
+      margin-bottom: 30px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 20px;
+    }
+    
+    .job-title {
+      font-size: 24px;
+      color: #333;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+    
+    .job-description {
+      color: #666;
+      margin-bottom: 10px;
+    }
+    
+    .job-requirements {
+      display: none;
+      color: #999;
+      margin-bottom: 10px;
+    }
+    
+    .job-benefits {
+      display: none;
+      color: #999;
+    }
+    
+    .toggle-btn {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Carreiras na Empresa XYZ</h1>
+  </header>
+  
+  <main>
+    <div class="job">
+      <h2 class="job-title">Desenvolvedor Front-End</h2>
+      <p class="job-description">Estamos procurando um desenvolvedor front-end para se juntar à nossa equipe e ajudar a construir interfaces web incríveis.</p>
+      <p class="job-requirements">Requisitos: experiência em HTML, CSS e JavaScript. Conhecimento de frameworks como React é desejável.</p>
+      <p class="job-benefits">Benefícios: plano de saúde, vale-refeição e ambiente de trabalho descontraído.</p>
+      <button class="toggle-btn">Mostrar Requisitos</button>
+      <button class="toggle-btn">Mostrar Benefícios</button>
+    </div>
+    
+    <div class="job">
+      <h2 class="job-title">Gerente de Vendas</h2>
+      <p class="job-description">Estamos buscando um gerente de vendas experiente para liderar nossa equipe e impulsionar nossas metas de receita.</p>
+      <p class="job-requirements">Requisitos: experiência prévia em vendas, habilidades de liderança e capacidade de trabalhar em equipe.</p>
+      <p class="job-benefits">Benefícios: salário competitivo, comissões sobre vendas e oportunidades de crescimento.</p>
+      <button class="toggle-btn">Mostrar Requisitos</button>
+      <button class="toggle-btn">Mostrar Benefícios</button>
+    </div>
+  </main>
+  
+  <script>
+    const toggleBtns = document.querySelectorAll('.toggle-btn');
+
+    toggleBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const job = btn.parentElement;
